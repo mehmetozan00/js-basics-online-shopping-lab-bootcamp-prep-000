@@ -21,6 +21,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var product = item_objects;
   var message = 'In your cart, you have ';
 
   if (cart.length === 0) {
