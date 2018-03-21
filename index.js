@@ -27,7 +27,7 @@ function viewCart() {
     return 'Your shopping cart is empty.';
 
   } else if (cart.length === 1) {
-    return "In your cart, you have " + Object.keys(item_objects) + " at $" + item_objects[Object.keys(item_objects)] + ".";
+    return "In your cart, you have " + itemName + " at $" + ".";
   }
 
 function total() {
