@@ -25,11 +25,11 @@ function viewCart() {
 
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
-    
+
   } else if (cart.length === 1) {
     var product = cart[0];
     return 'In your cart, you have ' + Object.keys(product) + " at $" + product[Object.keys(product)] + '.';
-    
+
     } else if (cart.length > 1) {
         for (var i = 0; i < cart.length; i++) {
           var item = cart[i];
@@ -43,12 +43,12 @@ function viewCart() {
               var newEle = chars.slice(0,chars.length - 1).join('');
               message = message.split(lastEle).join(newEle);
               message += ' and ' + itemName + " at $" + item[itemName] + '.';
-              
+
             } else {
               message += ' and ' + itemName + " at $" + item[itemName] + '.';
             }
           }
-          
+
           else {
             message += ' ' + itemName + " at $" + item[itemName] + ',';
           }
