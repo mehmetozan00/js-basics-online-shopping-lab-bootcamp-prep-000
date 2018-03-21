@@ -28,7 +28,7 @@ function viewCart() {
 
   } else if (cart.length === 1) {
     var product = cart[0];
-    message += cart[0] + " at $" + cart[Object.keys(cart)] + '.';
+    message += cart[0][itemName] + " at $" + cart[Object.keys(cart)] + '.';
     return message;
   }
 }
